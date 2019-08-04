@@ -1,0 +1,10 @@
+common:
+  useEcon: false
+#  chat: false
+  cost: 10.0
+  useMode: true
+  warn: false
+  RangeWarn: 30.0
+  cooldown: 60
+  timeout: 25
+  prefix: '紫色隐者'

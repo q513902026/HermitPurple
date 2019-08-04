@@ -1,0 +1,28 @@
+name: HermitPurple
+version: 1.2
+author: HopeAsd
+main: me.hopeasd.hp.HermitPurple
+softdepend: [Vault]
+
+commands:
+  hermitpurple:
+    aliases: ["hmp"]
+    usage: /<hermitpurle| hmp> <player>
+    description: 老东西你的替身最没用啦！
+    permission: hermitpurple.use
+    default: true
+    permission-message: 你还不会这个命令.
+permissions:
+  hermitpurple.*:
+    default: op
+    children:
+      hermitpurple.use: true
+      hermitpurple.econ.ignore: false
+      hermitpurple.warn: true
+      hermitpurple.cooldown.ignore: false
+  hermitpurple.econ.ignore:
+    default: op
+  hermitpurple.use:
+    default: true
+  hermitpurple.cooldown.ignore:
+    default: op

@@ -1,0 +1,9 @@
+common:
+  useEcon: false
+  cost: 10.0
+  useMode: true
+  warn: false
+  RangeWarn: 15.0
+  cooldown: 55
+  timeout: 20
+  prefix: '紫色隐者'

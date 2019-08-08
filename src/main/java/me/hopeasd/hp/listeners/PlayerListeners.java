@@ -125,12 +125,12 @@ public class PlayerListeners implements Listener {
          Player player = e.getPlayer();
          Action action = e.getAction();
         if (action == Action.RIGHT_CLICK_AIR || action == Action.RIGHT_CLICK_BLOCK) {
-            if (player.isSneaking()){
-                player.setCompassTarget(player.getWorld().getSpawnLocation());
-                instance.sendFormatMessage(player,"compass.reset");
-                return;
-            }
             if (e.getMaterial() == Material.COMPASS) {
+                if (player.isSneaking()){
+                    player.setCompassTarget(player.getWorld().getSpawnLocation());
+                    instance.sendFormatMessage(player,"compass.reset");
+                    return;
+                }
                 if (checkEcon(player) && checkCooldown(player)) {
                     toggleInteract(player);
                     return;
